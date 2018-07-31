@@ -1,1 +1,1 @@
-# django_full_stack
+# django_full_stack_course
