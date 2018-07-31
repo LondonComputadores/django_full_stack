@@ -1,0 +1,50 @@
+<!--<!DOCTYPE html>
+{% load staticfiles %}
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>London Computadores</title>
+        <link rel="stylesheet" href="{% static "css/mystyle.css" %}"/>
+    </head>
+    <body>
+        <h1>Bem Vindos à London Computadores</h1>
+    <h2>Welcome To London Computadores</h2>
+    <p id="image">
+    <img src="{% static "images/logo_london.jpg" %}" alt="Uh Oh, din't show!" >
+    </p>
+    </body>
+</html> -->
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>London Serviços</title>
+        <link rel="stylesheet" href="{% static "css/mystyle.css" %}"/>
+    </head>
+    <body>
+        <h1>London Computadores</h1>
+        <h2>Relatório de Acessos!</h2>
+
+        <div class="djangotwo">
+            {% if access_records %}
+            <table>
+                <thead>
+                    <th>Site Name</th>
+                    <th>Date Accessed</th>
+                </thead>
+
+            {% for acc in access_records %}
+                <tr>
+                    <td>{{ acc.name }}</td>
+                    <td>{{ acc.date }}</td>
+                </tr>
+            {% endfor %}
+            </table>
+            {% else %}
+                <p> NO ACCESS RECORDS FOUND!</p>
+            {% endif %}
+        </div>
+
+    </body>
+</html>

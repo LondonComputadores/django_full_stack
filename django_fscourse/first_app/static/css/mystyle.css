@@ -1,0 +1,28 @@
+/* Body{
+    align-content: center;
+
+h1{
+  color: blue;
+  border-bottom: 4px solid red;
+  align-content: center;
+  padding-bottom: 5px
+  align-self: center;
+
+
+h2{
+    align-items: center;
+    color: red;
+    padding-top: 10px;
+    padding-bottom: 20px;
+
+
+#image{
+    image-orientation: center;
+ */
+
+h1{
+    color: red;
+}
+table, th, td{
+    border: 2px solid black
+}
